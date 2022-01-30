@@ -669,4 +669,20 @@ button, a {
 .clients-logo__item:nth-child(7) {
   border-bottom: none;
 }
+
+.footer {
+  position: relative;
+  padding: 91px 0 64px 0;
+  background-color: #5A98D0;
+  color: #ffffff;
+}
+
+.footer-wrapper {
+  position: absolute;
+  right: 96px;
+  width: 100%;
+  height: 100%;
+  background-color: #316099;
+  border-radius: 0px 200px 0px 0px;
+}
 /*# sourceMappingURL=style.css.map */
