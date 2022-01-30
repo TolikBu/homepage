@@ -1,0 +1,64 @@
+.clients
+  color: $white
+  &-wrapper
+    padding: 96px 0 125px 0
+    background: $light-blue
+    border-radius: 200px 0px 0px 0px
+  &-header
+    display: flex
+    align-items: center
+    margin-bottom: 111px
+    &__title
+      display: block
+      width: 235px
+      font-size: 36px
+      line-height: 46px
+      letter-spacing: 0.05em
+      margin: 0
+      margin-right: 97px
+    &__text
+      width: 540px
+      font-size: 16px
+      line-height: 26px
+      letter-spacing: 0.05em
+      opacity: 0.6
+  &-logo
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      width: 235px
+      height: 128px
+      padding: 41px 43px
+      position: relative
+      border: 1px solid #F2F2F2
+      border-top: none
+      border-left: none
+      font-size: 20px
+      line-height: 46px
+      letter-spacing: 0.02em
+      color: #F2F2F2
+      opacity: 0.6
+      &:hover
+        &::before
+          display: block
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          background-color: $navy
+          opacity: .2
+      &:last-child
+        padding: 41px 61px
+        border-right: none
+        border-bottom: none
+      &:nth-child(4)
+        border-right: none
+      &:nth-child(5)
+        border-bottom: none
+      &:nth-child(6)
+        border-bottom: none
+      &:nth-child(7)
+        border-bottom: none
