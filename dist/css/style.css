@@ -694,13 +694,14 @@ button, a {
   border-radius: 0px 200px 0px 0px;
 }
 
-.footer-header {
+.footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 193px;
 }
 
 .footer-info {
@@ -734,7 +735,7 @@ button, a {
   opacity: 0.6;
 }
 
-.footer-info__button {
+.footer-button {
   padding: 15px 48px;
   background: #5A98D0;
   -webkit-box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
@@ -744,16 +745,103 @@ button, a {
   border: 1px solid transparent;
 }
 
-.footer-info__button:hover {
+.footer-button:hover {
   background: #316099;
   border: 1px solid #5A98D0;
 }
 
-.footer-info__buttontext {
+.footer-buttontext {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+
+.footer-bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 64px;
+}
+
+.footer-bottom::before {
+  position: absolute;
+  top: -96px;
+  right: 80px;
+  display: block;
+  content: "";
+  width: 2000px;
+  height: 0;
+  border: 1px solid #FFFFFF;
+  opacity: 0.4;
+}
+
+.footer-bottom__items {
+  max-width: 300px;
+  margin-right: 100px;
+}
+
+.footer-bottom__logo {
+  font-size: 28px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  margin-bottom: 31px;
+}
+
+.footer-bottom__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Gilroy-Light',sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+.footer-bottom__item:nth-child(2)::before {
+  display: block;
+  content: "A.";
+  margin-right: 16px;
+}
+
+.footer-bottom__item:nth-child(3)::before {
+  display: block;
+  content: "T.";
+  margin-right: 16px;
+}
+
+.footer-bottom__item:nth-child(4)::before {
+  display: block;
+  content: "E.";
+  margin-right: 16px;
+}
+
+.footer-bottom__title {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.footer-bottom__link {
+  font-family: 'Gilroy-Light',sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.footer-production {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=style.css.map */

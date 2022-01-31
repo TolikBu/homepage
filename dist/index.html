@@ -14,9 +14,9 @@
     <section class="hero">
       <div class="container hero-container">
         <header class="header hero-header">
-          <div class="hero-header__icon">
+          <a href="#" class="hero-header__icon">
             <img src="./img/logo.svg" alt="logo" class="hero-header__icon" />
-          </div>
+          </a>
           <div class="hero-header__btn">
             <img src="./img/btnmenu.svg" alt="logo" class="hero-header__menu" />
           </div>
@@ -110,31 +110,43 @@
     </section>
     <!-- /.clients -->
     <section class="footer">
-      
-        <div class="container">
-          <div class="footer-header">
-            <div class="footer-info">
-              <h2 class="footer-info__title">Intersted to woek with&nbspour team?</h2>
-              <p class="footer-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <button class="footer-info__button"><div class="footer-info__buttontext">See Our Project</div></button>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-info">
+            <h2 class="footer-info__title">Intersted to woek with&nbspour team?</h2>
+            <p class="footer-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
-          <!-- /.footer-header -->
+          <button class="footer-button"><div class="footer-buttontext">See Our Project</div></button>
         </div>
-        <!-- /.footer-wrapper -->
+        <!-- /.footer-top -->
+        <div class="footer-bottom">
+          <div class="footer-bottom__items">
+            <a href="#" class="footer-bottom__logo"><img src="./img/footerlog.svg" alt="footer logo" class="footer-bottom__image" /></a>
+            <p class="footer-bottom__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <span class="footer-bottom__item">+62-812-7313-4321</span>
+            <span class="footer-bottom__item">hello.afrian@gmail.com</span>
+          </div>
+          <div class="footer-bottom__items">
+            <h3 class="footer-bottom__title">About US</h3>
+            <div class="footer-bottom__link">About</div>
+            <div class="footer-bottom__link">Want We Do</div>
+            <div class="footer-bottom__link">Project</div>
+            <div class="footer-bottom__link">How It Work With Us</div>
+          </div>
+          <div class="footer-bottom__items">
+            <h3 class="footer-bottom__title">Follow US</h3>
+            <div class="footer-bottom__link">Instagram</div>
+            <div class="footer-bottom__link">Facebook</div>
+            <div class="footer-bottom__link">Linkedin</div>
+            <div class="footer-bottom__link">Youtube</div>
+          </div>
+          
+        </div>
+        <!-- /.footer-bottom -->
+        <span class="footer-production">2019 © Afrianska. All rights reserved.</span>
+      </div>
       <div class="footer-wrapper"></div>
     </section>
     <!-- /.footer -->
-    <script>
-      let scrollHeight = Math.max(
-        document.body.scrollHeight,
-        document.documentElement.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.offsetHeight,
-        document.body.clientHeight,
-        document.documentElement.clientHeight
-      );
-      window.scrollTo(0, scrollHeight);
-    </script>
   </body>
 </html>
