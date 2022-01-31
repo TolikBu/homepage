@@ -1,5 +1,5 @@
 const oneJs = () => {
-  console.log("one");
+  console.log('работает ');
 };
 
 export default oneJs;
