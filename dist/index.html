@@ -17,9 +17,9 @@
           <a href="#" class="hero-header__icon">
             <img src="./img/logo.svg" alt="logo" class="hero-header__icon" />
           </a>
-          <div class="hero-header__btn">
+          <button class="hero-header__btn">
             <img src="./img/btnmenu.svg" alt="logo" class="hero-header__menu" />
-          </div>
+          </button>
         </header>
       </div>
       <!-- /. footer -->
@@ -116,7 +116,7 @@
             <h2 class="footer-info__title">Intersted to woek with&nbspour team?</h2>
             <p class="footer-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
-          <button class="footer-button"><div class="footer-buttontext">See Our Project</div></button>
+          <button class="footer-button"><div class="footer-buttontext">Let's Talk</div></button>
         </div>
         <!-- /.footer-top -->
         <div class="footer-bottom">
@@ -148,27 +148,31 @@
     </section>
     <!-- /.footer -->
 
-    <div class="modal-overlay">
-      <div class="modal">
-        <p class="modal-name">SEND US MESSAGE</p>
-        
-        <form name="modal-form" class="form-horizontal">
-          <div class="modal-form__name">
-            <p class="modal-name">Name</p>
-            <input type="text" name="fio" class="modal-control required" placeholder="Your name*" />
+    <div class="modal">
+      <div class="modal__overlay">
+      <div class="modal__dialog">
+        <div href="#" class="modal-close">
+          <img src="./img/close.svg" alt="icon: close" class="modal-close__image" />
+        </div>
+        <h3 class="modal-name">SEND US MESSAGE</h3>
+        <form id="modal-form" name="modal-form" class="modal-form">
+          <div class="modal-form__item">
+            <p class="modal-form__name">Full Name</p>
+            <input type="text" name="fio" id="fio" class="modal-form__input required" placeholder="Your name*" />
           </div>
-          <div class="modal-form__phone">
-            <p class="modal-name">Phone</p>
-            <input type="text" name="phone" class="modal-control" placeholder="Your phone*" />
+          <div class="modal-form__item">
+            <p class="modal-form__email">Email</p>
+            <input type="text" name="email" class="modal-form__input" placeholder="Your email*" />
           </div>
-          <div class="modal-form__message">
-            <p class="modal-name">Message</p>
-            <input type="text" name="text" class="modal-control" placeholder="Your message*" />
+          <div class="modal-form__item">
+            <p class="modal-form__message">Message</p>
+            <input type="text" rows="5" name="text" class="modal-form__input modal-form__input--mess" placeholder="Your message*" />
           </div>
-          <button class="footer-button"><div class="footer-buttontext">Submit</div></button>
+          <button class="modal-button"><div class="modal-buttontext">Submit</div></button>
         </form>
       </div>
+      </div>
     </div>
-  <!-- /. modal -->
+    <!-- /. modal -->
   </body>
 </html>

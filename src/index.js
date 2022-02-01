@@ -1,4 +1,7 @@
-import one from "./modules/one";
+import modal from './modules/modal';
+import sendForm from './modules/sendForm';
+import formValid from './modules/formValid';
 
-
-one();
+modal();
+sendForm();
+formValid();
