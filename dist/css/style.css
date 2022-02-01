@@ -980,4 +980,126 @@ button, a {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+
+@media (max-width: 1200px) {
+  .hero-container {
+    width: 940px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 700px;
+  }
+  .hero {
+    height: 668px;
+  }
+  .hero-container {
+    width: 700px;
+  }
+  .hero-image {
+    display: none;
+  }
+  .benefits {
+    padding: 90px 0 100px 0;
+  }
+  .benefits-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits-column1__title {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .benefits-card {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .clients-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .clients-logo__item:nth-child(2) {
+    border-right: none;
+  }
+  .clients-logo__item:nth-child(5) {
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .clients-logo__item:nth-child(6) {
+    border-right: none;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .footer-info {
+    margin-bottom: 25px;
+  }
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media (max-width: 762px) {
+  .container {
+    width: 90%;
+  }
+  .hero-container {
+    width: 90%;
+  }
+  .hero-info__title {
+    font-size: 56px;
+    line-height: 66px;
+  }
+  .clients-wrapper {
+    padding-bottom: 30px;
+  }
+  .clients-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .clients-header__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .clients-header__text {
+    max-width: 470px;
+    margin: auto;
+  }
+  .clients-logo {
+    margin-bottom: 30px;
+  }
+  .footer-info__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .footer-bottom__items {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

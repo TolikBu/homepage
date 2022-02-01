@@ -11,7 +11,7 @@ const modal = () => {
     e.preventDefault();
 
     modal.style.display = 'block';
-    if (document.documentElement.clientWidth > 768) {
+    if (document.documentElement.clientWidth > 991) {
       animate({
         duration: 300,
         timing(timeFraction) {
@@ -21,6 +21,8 @@ const modal = () => {
           modalDialog.style.top = progress * 10 + '%';
         },
       });
+    } else {
+      modalDialog.style.top = '20%'
     }
 
     document.body.style.overflow = 'hidden';
