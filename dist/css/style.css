@@ -863,7 +863,6 @@ button, a {
   bottom: 0;
   background-color: rgba(31, 63, 104, 0.39);
   z-index: 100;
-  overflow: hidden;
 }
 
 .modal__dialog {
@@ -885,8 +884,8 @@ button, a {
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -939,27 +938,23 @@ button, a {
 }
 
 .modal-form__input--mess {
-  min-height: 144px;
+  height: 144px;
 }
 
 .modal-form__input--mess::-webkit-input-placeholder {
-  text-align: start;
-  padding-top: 0px;
+  text-ident: -100px;
 }
 
 .modal-form__input--mess:-ms-input-placeholder {
-  text-align: start;
-  padding-top: 0px;
+  text-ident: -100px;
 }
 
 .modal-form__input--mess::-ms-input-placeholder {
-  text-align: start;
-  padding-top: 0px;
+  text-ident: -100px;
 }
 
 .modal-form__input--mess::placeholder {
-  text-align: start;
-  padding-top: 0px;
+  text-ident: -100px;
 }
 
 .modal-button {

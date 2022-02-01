@@ -1,6 +1,7 @@
 const sendForm = () => {
   const form = document.getElementById('modal-form');
   const statusBlock = document.createElement('div');
+  const textArea = document.querySelector('.modal-form__input--mess');
   const loadText = 'Загрузка...';
   const errorText = 'Ошибка...';
   const successText = 'Наш менеджер с вами свяжется!';
@@ -11,6 +12,7 @@ const sendForm = () => {
 
   let formElements = form.querySelectorAll('input');
 
+  // функция валидация при отправке формы
   const validate = (list) => {
     let success = true;
 
@@ -32,6 +34,7 @@ const sendForm = () => {
     return success;
   };
 
+  // функция принимающая данные из формы 
   const sendData = (data) => {
     return fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
@@ -42,12 +45,13 @@ const sendForm = () => {
     }).then((res) => res.json());
   };
 
+  // функция отправки формы
   const submitForm = () => {
     formElements = form.querySelectorAll('input');
 
     const formData = new FormData(form);
     const formBody = {};
-
+    //добавление блока с сообщение об отправке формы
     statusBlock.textContent = loadText;
     form.append(statusBlock);
 
@@ -55,6 +59,7 @@ const sendForm = () => {
       formBody[key] = val;
     });
 
+    // вывод разных сообщений при отправке формы либо о не правильной валидации
     if (validate(formElements)) {
       sendData(formBody)
         .then((data) => {
@@ -66,6 +71,7 @@ const sendForm = () => {
           formElements.forEach((input) => {
             input.value = '';
           });
+          textArea.value = '';
           return;
         })
         .catch((error) => {
@@ -80,7 +86,7 @@ const sendForm = () => {
       return;
     }
   };
-
+ // проверка если форму случайно удалили другой разработчик 
   try {
     if (!form) {
       throw new Error('Верните форму на место');

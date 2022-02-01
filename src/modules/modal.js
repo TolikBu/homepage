@@ -22,13 +22,16 @@ const modal = () => {
         },
       });
     }
+
+    document.body.style.overflow = 'hidden';
   });
 
-  // закрытие мддального окна
+  // закрытие мддального окна с применением делигирования
   modalOverlay.addEventListener('click', (e) => {
     if (!e.target.closest('.modal__dialog') || e.target.classList.contains('modal-close__image')) {
       modal.style.display = 'none';
       modal.style.top = '';
+      document.body.style.overflow = '';
     }
   });
 };
