@@ -1115,6 +1115,12 @@ button, a {
     font-size: 16px;
     line-height: 40px;
   }
+  .modal__dialog {
+    width: 90%;
+  }
+  .modal-form__input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 465px) {
